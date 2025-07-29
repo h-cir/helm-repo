@@ -10,7 +10,7 @@ redis:
 
 app:
   repository: public.ecr.aws/g1o9h9r6/enhydra-lab2
-  tag: add-cd
+  tag: app-v1
   replicas: 1
 
 nginx:
