@@ -3,12 +3,12 @@ entries:
   myapp-chart:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-07-29T04:16:52.400583276Z"
+    created: "2025-07-29T05:00:27.450880758Z"
     description: A Helm chart with image and replicas as variables
-    digest: 243afe64b0ebffa03f026a5a118dd243997e4ee127944dc5045094301a0e7acb
+    digest: 6321a2cfea22e7925d1287200cafb48e986557998859c4320bd4409965844da9
     name: myapp-chart
     type: application
     urls:
     - https://h-cir.github.io/helm-repo/myapp-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-07-29T04:16:52.40014613Z"
+generated: "2025-07-29T05:00:27.450428152Z"
