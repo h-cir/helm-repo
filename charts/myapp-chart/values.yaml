@@ -1,0 +1,28 @@
+db:
+  repository: public.ecr.aws/g1o9h9r6/enhydra-lab2
+  tag: db-v1
+  replicas: 1
+
+redis:
+  repository: public.ecr.aws/g1o9h9r6/enhydra-lab2
+  tag: redis-v1
+  replicas: 1
+
+app:
+  repository: public.ecr.aws/g1o9h9r6/enhydra-lab2
+  tag: app-v1
+  replicas: 1
+
+nginx:
+  repository: nginx
+  tag: latest
+  replicas: 1
+
+
+ingress:
+  healthCheckPath: /healthz
+  host: app.jeonghyein.shop
+  certificateArn: arn:aws:acm:ap-northeast-3:862016452072:certificate/09aafdfc-7e16-4335-93e2-d55688c51ca6
+  group:
+    name: shared-alb
+    order: "10"
